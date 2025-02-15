@@ -1,0 +1,59 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: #111;
+  padding: 20px 0;
+  height: 90px;
+}
+
+/* Logo */
+#header #logo {
+  float: left;
+}
+
+/* Logo Text */
+#header #logo h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 6px 0;
+  line-height: 1;
+  font-family: Arial, sans-serif; /* Reemplazo de $accent-font */
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* Logo Links */
+#header #logo h1 a,
+#header #logo h1 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Logo Image */
+#header #logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 50px;
+}
+
+/* Responsive Header */
+@media (max-width: 768px) {
+  #header {
+    height: 80px;
+  }
+
+  #header #logo h1 {
+    font-size: 26px;
+  }
+
+  #header #logo img {
+    max-height: 40px;
+  }
+}
+
+/* Sticky Header */
+.is-sticky #header {
+  background: rgba(0, 0, 0, 0.85);
+}

@@ -1,0 +1,94 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  background: #fff;
+  color: #333; /* Reemplazando la variable $text-color */
+  font-family: Arial, sans-serif; /* Reemplazando la variable $text-font */
+}
+
+a {
+  color: #ff6600; /* Reemplazando la variable $accent-color */
+  transition: 0.5s;
+}
+
+a:hover, a:active, a:focus {
+  color: rgba(255, 102, 0, 0.8); /* Simulando lighten($accent-color, 0.2%) */
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arial Black', sans-serif; /* Reemplazando la variable $heading-font */
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+/* Preloader */
+#preloader { 
+  position: fixed; 
+  left: 0; 
+  top: 0; 
+  z-index: 999; 
+  width: 100%; 
+  height: 100%; 
+  overflow: visible; 
+  background: #fff url('../img/preloader.svg') no-repeat center center; 
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: rgba(0,0,0,0.2);
+  color: #fff;
+  padding: 6px 12px 9px 12px;
+  font-size: 16px;
+  border-radius: 2px;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+}
+
+@media (max-width: 768px) { 
+  .back-to-top {
+    bottom: 15px;
+  }
+}
+
+.back-to-top:focus {
+  background: rgba(0,0,0,0.2);
+  color: #fff;
+  outline: none;
+}
+
+.back-to-top:hover {
+  background: #ff6600; /* Reemplazando la variable $accent-color */
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #111;
+  padding: 30px 0;
+  color: #fff;
+  text-align: center;
+}
+
+#footer .copyright {
+  text-align: center;
+}
+
+#footer .credits {
+  padding-top: 10px;
+  font-size: 13px;
+  color: #ccc;
+}
